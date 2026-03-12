@@ -1,9 +1,21 @@
 .venv/
 __pycache__/
 *.pyc
-airflow/logs/
-logs/
-tmp/
 *.log
 .env
 .DS_Store
+
+airflow_fresh/
+airflow_home/
+submission/
+tmp_check/
+dt212g_submission/
+dt212g_submission (2)/
+*.zip
+
+artifacts/*
+!artifacts/airflow_final/
+!artifacts/airflow_final/raw_requests.csv
+!artifacts/airflow_final/wifi_link.csv
+!artifacts/airflow_final/analytics.csv
+!artifacts/airflow_final/report.txt
