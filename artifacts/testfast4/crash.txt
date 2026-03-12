@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/thehemraj/dt212g_project/scripts/run_experiment.py", line 103, in main
+    net.build()
+  File "/usr/local/lib/python3.12/dist-packages/mininet_wifi-2.7-py3.12.egg/mn_wifi/net.py", line 1051, in build
+    self.auto_association()
+  File "/usr/local/lib/python3.12/dist-packages/mininet_wifi-2.7-py3.12.egg/mn_wifi/net.py", line 1759, in auto_association
+    self.wmediumd_workaround(node)
+  File "/usr/local/lib/python3.12/dist-packages/mininet_wifi-2.7-py3.12.egg/mn_wifi/net.py", line 1709, in wmediumd_workaround
+    node.set_pos_wmediumd(pos)
+  File "/usr/local/lib/python3.12/dist-packages/mininet_wifi-2.7-py3.12.egg/mn_wifi/node.py", line 211, in set_pos_wmediumd
+    if self.lastpos != pos:
+       ^^^^^^^^^^^^
+AttributeError: 'OVSAP' object has no attribute 'lastpos'. Did you mean: 'lastPid'?

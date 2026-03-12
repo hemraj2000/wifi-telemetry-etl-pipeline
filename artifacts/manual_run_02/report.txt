@@ -1,0 +1,12 @@
+WiFi Telemetry KPI Report
+Run: manual_run_02
+
+Success rate: 0.00%
+Latency mean: N/A
+Latency p95 : N/A
+
+Roaming indicator:
+- sta1: Not enough RSSI/AP data
+- sta2: Not enough RSSI/AP data
+
+Note: If AP never changes, this Mininet-WiFi environment may not support programmatic reassociation; RSSI-based trigger is used.

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/home/thehemraj/dt212g_project/scripts/run_experiment.py", line 107, in main
+    sta1.associate(ap1)
+    ^^^^^^^^^^^^^^
+AttributeError: 'Station' object has no attribute 'associate'

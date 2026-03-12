@@ -1,0 +1,10 @@
+WiFi Telemetry KPI Report
+Run: testok2
+
+Success rate: 100.00%
+Latency mean: 19.43 ms
+Latency p95 : 21.92 ms
+
+Roaming indicator:
+- sta1: no roaming detected
+- sta2: no roaming detected

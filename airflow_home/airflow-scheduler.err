@@ -1,0 +1,57 @@
+[2026-03-06 19:47:10 +0100] [21155] [INFO] Starting gunicorn 22.0.0
+[2026-03-06 19:47:10 +0100] [21155] [INFO] Listening at: http://[::]:8793 (21155)
+[2026-03-06 19:47:10 +0100] [21155] [INFO] Using worker: sync
+[2026-03-06 19:47:10 +0100] [21156] [INFO] Booting worker with pid: 21156
+[2026-03-06 19:47:10 +0100] [21158] [INFO] Booting worker with pid: 21158
+sudo: a password is required
+Traceback (most recent call last):
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/utils/process_utils.py", line 88, in signal_procs
+    os.killpg(process_group_id, sig)
+PermissionError: [Errno 1] Operation not permitted
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/thehemraj/dt212g_project/.venv/bin/airflow", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/__main__.py", line 58, in main
+    args.func(args)
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/utils/cli.py", line 114, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 441, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 219, in _run_task_by_selected_method
+    return _run_task_by_local_task_job(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 281, in _run_task_by_local_task_job
+    ret = run_job(job=job_runner.job, execute_callable=job_runner._execute)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/jobs/job.py", line 402, in run_job
+    return execute_job(job, execute_callable=execute_callable)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/jobs/job.py", line 431, in execute_job
+    ret = execute_callable()
+          ^^^^^^^^^^^^^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/jobs/local_task_job_runner.py", line 224, in _execute
+    self.on_kill()
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/jobs/local_task_job_runner.py", line 250, in on_kill
+    self.task_runner.terminate()
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 166, in terminate
+    rcs = reap_process_group(self.process.pid, self.log)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/utils/process_utils.py", line 153, in reap_process_group
+    signal_procs(signal.SIGKILL)
+  File "/home/thehemraj/dt212g_project/.venv/lib/python3.12/site-packages/airflow/utils/process_utils.py", line 93, in signal_procs
+    subprocess.check_call(
+  File "/usr/lib/python3.12/subprocess.py", line 413, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['sudo', '-n', 'kill', '-9', '44087', '44088', '44090', '44102', '44105', '44110', '44112', '44116', '44349', '46422', '46423', '44086']' returned non-zero exit status 1.

@@ -1,0 +1,12 @@
+WiFi Telemetry KPI Report
+Run: roam16
+
+Success rate: 100.00%
+Latency mean: 23.87 ms
+Latency p95 : 28.12 ms
+
+Roaming indicator:
+- sta1: no roaming detected
+- sta2: no roaming detected
+
+Note: If AP never changes, this Mininet-WiFi environment may not support programmatic reassociation; RSSI-based trigger is used.

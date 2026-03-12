@@ -1,0 +1,12 @@
+WiFi Telemetry KPI Report
+Run: roam17
+
+Success rate: 100.00%
+Latency mean: 25.06 ms
+Latency p95 : 26.73 ms
+
+Roaming indicator:
+- sta1: AP did not change; RSSI-based handover trigger at ~1772651697 (Δ≈13.0 dB, before≈-36.0 dBm, after≈-49.0 dBm)
+- sta2: AP did not change; RSSI-based handover trigger at ~1772651697 (Δ≈13.0 dB, before≈-36.0 dBm, after≈-49.0 dBm)
+
+Note: If AP never changes, this Mininet-WiFi environment may not support programmatic reassociation; RSSI-based trigger is used.

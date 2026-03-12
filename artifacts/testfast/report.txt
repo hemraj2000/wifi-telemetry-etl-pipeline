@@ -1,0 +1,9 @@
+WiFi Telemetry KPI Report
+Run: testfast
+
+Success rate: nan%
+Latency mean: nan ms
+Latency p95 : nan ms
+
+Roaming indicator:
+- 
