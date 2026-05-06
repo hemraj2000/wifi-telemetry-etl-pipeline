@@ -1,21 +1,24 @@
 .venv/
+venv/
 __pycache__/
 *.pyc
 *.log
-.env
+*.tmp
+
+airflow.db
+airflow-webserver.pid
+logs/
+
 .DS_Store
+.ipynb_checkpoints/
 
-airflow_fresh/
-airflow_home/
-submission/
-tmp_check/
-dt212g_submission/
-dt212g_submission (2)/
-*.zip
-
+# Ignore all experiment outputs by default
 artifacts/*
-!artifacts/airflow_final/
-!artifacts/airflow_final/raw_requests.csv
-!artifacts/airflow_final/wifi_link.csv
-!artifacts/airflow_final/analytics.csv
-!artifacts/airflow_final/report.txt
+
+# Keep only final output for GitHub
+!artifacts/final/
+!artifacts/final/**
+
+# Ignore temporary files
+final_outputs/
+GITHUB_UPLOAD_COMMANDS.txt
