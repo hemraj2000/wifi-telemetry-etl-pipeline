@@ -1,0 +1,42 @@
+GitHub Upload Commands
+======================
+
+1. Go to your project folder:
+
+cd ~/dt212g_project
+
+2. Create folders:
+
+mkdir -p docs
+mkdir -p artifacts/final_refined_output
+
+3. Copy the files into your project folder.
+If you downloaded this zip, copy everything inside github_upload_ready/ into ~/dt212g_project/
+
+Example:
+
+cp -r ~/Downloads/github_upload_ready/* ~/dt212g_project/
+
+4. Check files:
+
+ls -lh docs
+ls -lh artifacts/final_refined_output
+
+5. Add files to Git:
+
+git status
+git add README.md docs/ artifacts/final_refined_output/
+
+6. Commit:
+
+git commit -m "Add final DT023G output, report, and presentation"
+
+7. Push to GitHub:
+
+git push origin main
+
+If your branch is master, use:
+
+git push origin master
+
+If Git asks for username/password, use GitHub token instead of password.
