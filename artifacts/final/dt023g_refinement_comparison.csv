@@ -1,0 +1,5 @@
+metric,earlier_DT023G,final_DT023G,improvement
+success_rate_percent,82.12,100.0,Higher reliability
+failed_requests,1430,0,No failures in final run
+mean_latency_ms,17.39,12.32,Lower latency
+p95_latency_ms,27.28,18.87,Better tail latency

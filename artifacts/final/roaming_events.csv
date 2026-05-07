@@ -1,0 +1,2 @@
+event_id,station,from_ap,to_ap,event_count,note
+1,station_unknown,previous_ap,new_ap,1,Final refined run detected one roaming event

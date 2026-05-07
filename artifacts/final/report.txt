@@ -1,0 +1,51 @@
+WiFi Telemetry KPI Report
+=========================
+
+Project: DT023G WiFi Telemetry ETL Pipeline Extension
+Students: Hem Raj & Mohit Kumar
+
+Final Refined Output
+--------------------
+Total Requests: 8000
+Successful Requests: 8000
+Failed Requests: 0
+Success Rate: 100.0%
+Mean Latency: 12.32 ms
+P95 Latency: 18.87 ms
+Detected Roam Events: 1
+Access Points: 4
+Stations: 4
+Requests per Station: 2000
+
+Summary
+-------
+The final DT023G refined run successfully completed 8000 HTTP requests with 0 failures.
+The success rate reached 100.0%, showing strong reliability under a larger workload.
+The mean latency was 12.32 ms and the p95 latency was 18.87 ms.
+One roaming event was detected in the final run.
+
+Comparison with Previous DT212G Baseline
+----------------------------------------
+DT212G used 2 access points, 2 stations, and around 2000 total requests.
+DT212G achieved 99.55% success rate, 7.60 ms mean latency, and 8.48 ms p95 latency.
+DT023G increased the topology to 4 access points, 4 stations, and 8000 total requests.
+Although latency is higher because the network is larger, DT023G improved scale, reliability, workflow quality, and visual evidence.
+
+Comparison with Earlier DT023G Attempt
+--------------------------------------
+Earlier DT023G Success Rate: 82.12%
+Final DT023G Success Rate: 100.0%
+
+Earlier DT023G Failed Requests: 1430
+Final DT023G Failed Requests: 0
+
+Earlier DT023G Mean Latency: 17.39 ms
+Final DT023G Mean Latency: 12.32 ms
+
+Earlier DT023G P95 Latency: 27.28 ms
+Final DT023G P95 Latency: 18.87 ms
+
+Final Message
+-------------
+The refined DT023G project is a clear extension of DT212G.
+It is larger, more reliable, easier to explain, and includes better telemetry evidence using Airflow, KPI reports, and graph-based analysis.

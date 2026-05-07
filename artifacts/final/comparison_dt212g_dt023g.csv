@@ -1,0 +1,9 @@
+metric,DT212G_previous,DT023G_final,interpretation
+access_points,2,4,Larger network coverage
+stations,2,4,More clients
+requests_per_station,1000,2000,Heavier workload
+total_requests,about 2000,8000,Much larger dataset
+success_rate_percent,99.55,100.0,Reliability improved
+mean_latency_ms,7.60,12.32,Higher because DT023G setup is larger
+p95_latency_ms,8.48,18.87,Higher due to larger workload and roaming
+roaming,sta1 and sta2,1 event in final run,Roaming logic included
